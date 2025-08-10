@@ -1,0 +1,74 @@
+name: myproject
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+4
+
+environment:
+  sdk: ^3.8.1
+
+#isar_version: &isar_version 3.1.8 
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+  http: ^1.4.0
+  shared_preferences: ^2.5.3
+  path_provider: ^2.1.5
+  isar: 
+    version: 3.1.8 
+    hosted: https://pub.isar-community.dev/
+  isar_flutter_libs: # contains Isar Core
+    version: 3.1.8 
+    hosted: https://pub.isar-community.dev/
+
+  intl: ^0.20.2
+  responsive_sizer: ^3.3.1
+  flutter_dotenv: ^5.2.1
+  logger: ^2.6.1
+  animated_text_kit: ^4.2.3
+  device_info_plus: ^11.5.0
+  package_info_plus: ^8.3.0
+  path: ^1.9.1
+  archive: ^4.0.7
+  enum_to_string: ^2.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  isar_generator: 
+    version: 3.1.8 
+    hosted: https://pub.isar-community.dev/
+  build_runner: any
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/logos/logo.png
+    - assets/logos/appLogo.png
+    - assets/images/team 1.jpg
+    - assets/images/team 2.jpg
+    - assets/images/team 3.jpg
+    - assets/images/team 4.jpg
+    - assets/images/team 5.jpg
+    - assets/files/.env
