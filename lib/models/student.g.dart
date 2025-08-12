@@ -176,7 +176,7 @@ const StudentSchema = CollectionSchema(
   getId: _studentGetId,
   getLinks: _studentGetLinks,
   attach: _studentAttach,
-  version: '3.1.8',
+  version: '3.1.0+1',
 );
 
 int _studentEstimateSize(

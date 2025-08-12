@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myproject/components/Student_Info_Card.dart';
-import 'package:myproject/components/School_Info_Card.dart';
 import 'package:myproject/components/appbar_component.dart';
+import 'package:myproject/components/school_info_card.dart';
 import 'package:myproject/models/student.dart';
 import 'package:myproject/pages/main_pages/app_specific/student/HomePageStudent.dart';
 import 'package:myproject/services/DB/isar_services.dart';
@@ -141,7 +141,6 @@ class _StudentScreeningScreenState extends State<StudentScreeningScreen> {
               SizedBox(height: 2.h),
               StudentInfoCard(student: widget.student),
               SizedBox(height: 2.h),
-
               _buildChips(
                 "Wearing Glasses",
                 options['yesno']!,
@@ -178,7 +177,6 @@ class _StudentScreeningScreenState extends State<StudentScreeningScreen> {
                 referred,
                 (v) => referred = v,
               ),
-
               Padding(
                 padding: EdgeInsets.only(bottom: 2.h),
                 child: TextFormField(
@@ -198,7 +196,6 @@ class _StudentScreeningScreenState extends State<StudentScreeningScreen> {
                   },
                 ),
               ),
-
               ElevatedButton.icon(
                 onPressed: _saveStudent,
                 icon: const Icon(Icons.save),
